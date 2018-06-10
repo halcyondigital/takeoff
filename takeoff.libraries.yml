@@ -1,0 +1,31 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+
+fullpage:
+  version: 2.x
+  css:
+    theme:
+      fullpage/jquery.fullpage.min.css: {}
+  js:
+    fullpage/fullpage/vendors/scrolloverflow.js: {}
+    fullpage/jquery.fullpage.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - slick/slick
+
+front:
+  css:
+    theme:
+      css/front.css: {}
+  js:
+      js/front.js: {}
+  dependencies:
+    - takeoff/fullpage

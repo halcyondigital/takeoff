@@ -1,0 +1,97 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+use Drupal\Component\Utility\Html;
+
+function takeoff_preprocess_html(&$variables) {
+    $path_class = !$variables['root_path'] ? 'path-frontpage' : 'path-' . Html::getClass($variables['root_path']);
+    if ($path_class != 'path-frontpage') {
+      $variables['attributes']['class'][] = 'not-front';
+    }
+}
+
+function takeoff_preprocess_page(&$variables) {
+    if ($variables['is_front']) {
+        $variables['#attached']['library'][] = 'takeoff/fullpage';
+        $variables['#attached']['library'][] = 'takeoff/front';
+
+        // Load up home page display
+        $page_storage = \Drupal::entityTypeManager()->getStorage('page');
+        $about = $page_storage->load('home_page');
+        $variants = $about->getVariants();
+        $labels = array();
+        // Loop through and pull out section labels
+        foreach ($variants as $variant) {
+            $blocks = $variant->getPluginCollections()['variant_settings']->getConfiguration()['blocks'];
+            uasort($blocks, [
+                '\Drupal\Component\Utility\SortArray',
+                'sortByWeightElement'
+            ]);
+            foreach ($blocks as $block) {
+                $label = $block['label'];
+                $labels[] = str_replace(' ', '', strtolower(preg_replace("/\([^)]+\)/","", $label)));
+            }
+        }
+        $variables['#attached']['drupalSettings']['fullPage']['sections'] = $labels;
+    }
+}
+
+function takeoff_preprocess_block(&$variables) {
+    // if block is a node, pass fields to template
+    $node = $variables['elements']['content']['#node'] ?? NULL;
+    if ($node instanceof \Drupal\node\NodeInterface) {
+        // You can get nid and anything else you need from the node object.
+        $variables["nid"] = $node->id();
+        $variables["node_type"] = $node->getType();
+        $variables["node_title"] = $node->getTitle();
+        $variables["field_fp_classes"] = $node->field_fp_classes->value;
+        $variables["field_fp_offset"] = $node->field_fp_offset->value;
+        $variables["field_fp_offset_centered"] = $node->field_fp_offset_centered->value == 1 ? 'false' : NULL;
+    }
+    // if block is a view, pass custom data to template
+    $view = $variables['elements']['content']['#view'] ?? NULL;   
+    if ($view instanceof \Drupal\views\ViewExecutable) {
+        $display = $view->getDisplay();
+        $variables["view_fp_class"] = $display->display['display_options']['fullpage_class'];
+        $variables["view_fp_offset"] = $display->display['display_options']['fullpage_offset'];
+        $variables["view_fp_offset_centered"] = $display->display['display_options']['fullpage_offsetcenter'] == 1 ? 'false' : NULL;
+    }
+    // if block is a term, pass fields to template
+    $term = $variables['elements']['content']['#taxonomy_term'] ?? NULL;
+    if ($term instanceof \Drupal\taxonomy\Entity\Term) {
+        $variables["tid"] = $term->id();
+        $variables["term_name"] = strtolower($term->getName());
+        $variables["view_mode"] = str_replace('_', '-', $variables['elements']['#configuration']['view_mode']);
+        $variables["field_fp_classes"] = $term->field_fp_classes->value;
+        $variables["field_fp_offset"] = $term->field_fp_offset->value;
+        $variables["field_fp_offset_centered"] = $term->field_fp_offset_centered->value == 1 ? 'false' : NULL;
+    }    
+}
+
+function takeoff_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+    $provider = $variables['elements']['#configuration']['provider'];
+    /* Add template based on the block provider. */
+    switch ($provider) {
+      /* Ctools block */
+      case 'ctools_block':
+        $suggestions[] = 'block__ctools_block';
+        break;
+    }
+}
+
+function takeoff_page_attachments_alter(&$page) {
+    $viewport = array(
+      '#type' => 'html_tag',
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'viewport',
+        'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
+      ),
+    );
+    $page['#attached']['html_head'][] = [$viewport, 'viewport'];
+}
