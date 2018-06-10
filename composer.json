@@ -1,0 +1,6 @@
+{
+    "name": "halcyondigital/takeoff",
+    "description": "Drupal 8 theme for halcyon.digital website utilising fullpage.js",
+    "type": "drupal-theme",
+    "minimum-stability": "dev"
+}
