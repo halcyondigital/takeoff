@@ -6,7 +6,9 @@
 	position: fixed;
 	width: 100%;
 }
-
+section.fp-section {
+    z-index: 1;
+}
 /******** CONTAINER ********/
 body > div > .main-container.container-fluid {
     padding: 0;
