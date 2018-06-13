@@ -207,6 +207,9 @@ section.block-entity-blocktaxonomy-term .description {
 .node-slideshow .section-slide {
     color: #fdfdfd;
 }
+.node-slideshow .section-slide > fp-tableCell {
+    position: relative;
+}
 .node-slideshow .section-slide .body {
     font-size: calc(100% + 0.25vw);
     line-height: calc(150% + 0.2vw);
@@ -224,16 +227,18 @@ section.block-entity-blocktaxonomy-term .description {
 .node-slideshow .rental-sidebar {
 	position: absolute;
 	right: 0;
-	width: 16%;
+	width: 30%;
 	background: #212121;
 	height: 100%;
     top: 0;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 .node-slideshow .rental-sidebar > .rental-item {
-	position: relative;
+	/*position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);*/
     padding: 0 30px;
 }
 .node-slideshow .rental-sidebar h5 {
