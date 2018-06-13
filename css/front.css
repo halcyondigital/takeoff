@@ -234,6 +234,7 @@ section.block-entity-blocktaxonomy-term .description {
     text-align: center;
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 .node-slideshow .rental-sidebar > .rental-item {
 	/*position: relative;
