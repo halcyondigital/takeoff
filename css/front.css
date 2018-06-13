@@ -207,7 +207,7 @@ section.block-entity-blocktaxonomy-term .description {
 .node-slideshow .section-slide {
     color: #fdfdfd;
 }
-.node-slideshow .section-slide > fp-tableCell {
+.node-slideshow .section-slide > .fp-tableCell {
     position: relative;
 }
 .node-slideshow .section-slide .body {
