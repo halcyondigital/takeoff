@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 99%;
+    width: calc(100% - 1px);
     height: 2px;
     transform: scaleX(0);
     background-color: #16c1f3;
