@@ -172,7 +172,7 @@ section.fullpage-header .view-sub-categories div {
     display: inline;
 }
 section.fullpage-header .view-sub-categories .sub-category::after {
-    content: "/";
+    content: " /";
 }
 section.fullpage-header .view-sub-categories > div:last-child .sub-category::after {
     content: "";
