@@ -257,7 +257,7 @@ section.block-entity-blocktaxonomy-term .description {
 	line-height: 2em;
     letter-spacing: 0.2em;
     margin: 10px 0;
-    font-size: calc(40% + 0.7vw);
+    font-size: calc(25% + 0.65vw);
 }
 .node-slideshow .rental-sidebar .price {
 	text-transform: uppercase;
