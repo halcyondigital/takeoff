@@ -34,7 +34,7 @@ function takeoff_preprocess_page(&$variables) {
             ]);
             foreach ($blocks as $block) {
                 $label = $block['label'];
-                $labels[] = str_replace('-', '', strtolower(preg_replace("/\([^)]+\)/","", $label)));
+                $labels[] = str_replace(' ', '-', strtolower(preg_replace("/\([^)]+\)/","", $label)));
             }
         }
         $variables['#attached']['drupalSettings']['fullPage']['sections'] = $labels;
