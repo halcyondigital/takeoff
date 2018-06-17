@@ -170,6 +170,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 /******** RENTAL ITEMS CAROUSEL ********/
+.rental-items-filter.off {
+    display: none;
+}
 section.fullpage-section-dark .items-carousel .slide__title {
     color: #212121;
     background-color: #fdfdfd;
