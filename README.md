@@ -6,4 +6,4 @@
 Based on Bootstrap 3 and [Drupal Bootstrap]. Incorporates [fullpage.js]
 
 [Drupal Bootstrap]: https://www.drupal.org/project/bootstrap
-[fulpage.js]:  https://github.com/alvarotrigo/fullPage.js
+[fullpage.js]:  https://github.com/alvarotrigo/fullPage.js
