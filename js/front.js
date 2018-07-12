@@ -16,7 +16,15 @@
                     slidesNavigation: true,
                     onLeave: function(index, nextIndex, direction){
                         var leavingSection = $(this);
-                        
+
+                        // attempt to lazy load following slide
+                        if(direction == 'down'){
+                          lazyLoad(nextIndex);
+                        }
+                        if(direction == 'up'){
+                          lazyLoad(nextIndex - 2);
+                        }
+
                         // fade in extra nav options when moving off 1st slide
                         if(index == 1 && direction =='down'){
                             $('.navbar.navbar-fixed-top').addClass('deep');
@@ -47,6 +55,40 @@
                     }
                 });
             }
+
+            /**
+            * Sets the value for the given attribute from the `data-` attribute with the same suffix
+            * ie: data-srcset ==> srcset  |  data-src ==> src
+            */
+            function setSrc(element, attribute){
+              element
+                .attr(attribute, element.data(attribute))
+                .removeAttr('data-' + attribute);
+            }
+
+            // Lazy loads image, video and audio elements.
+            function lazyLoad(index){
+              var panel = $("#fullpage section").eq(index);
+              console.log(panel);
+              var element;
+
+              panel.find('img[data-src], img[data-srcset], source[data-src], source[data-srcset], video[data-src], audio[data-src], iframe[data-src]').each(function(){
+                element = $(this);
+
+                $.each(['src', 'srcset'], function(index, type){
+                    var attribute = element.attr('data-' + type);
+                    if(typeof attribute !== 'undefined' && attribute){
+                        setSrc(element, type);
+                    }
+                });
+
+                if(element.is('source')){
+                    var typeToPlay = element.closest('video').length ? 'video' : 'audio';
+                    element.closest(typeToPlay).get(0).load();
+                }
+              });
+            }
+
             var animationDelay = 2500;
             function animateHeadline($headlines) {
                 $headlines.each(function(){
@@ -61,11 +103,11 @@
                 switchWord($word, nextWord);
                 setTimeout(function(){ hideWord(nextWord) }, animationDelay);
              }
-             
+
             function takeNext($word) {
                 return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
              }
-             
+
             function switchWord($oldWord, $newWord) {
                 $oldWord.removeClass('is-visible').addClass('is-hidden');
                 $newWord.removeClass('is-hidden').addClass('is-visible');
