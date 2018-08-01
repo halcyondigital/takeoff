@@ -339,4 +339,13 @@ section.block-entity-blocktaxonomy-term .description {
 .credits-slider .slick-arrow.slick-next {
 	transform: translate(140%,-150%);
 }
+/******** FACILITIES - MORE ********/
+section.node-43 {
+    background-color: #212121;
+    color: #fdfdfd;
+}
+section.node-43 .body {
+	margin-bottom: 35px;
+	text-align: center;
+}
 /******** CONTACT ********/
