@@ -108,9 +108,6 @@ section.node-page .body {
     font-size: calc(100% + 0.25vw);
     line-height: calc(150% + 0.2vw);
 }
-body.fp-responsive section.node-page .body {
-    padding-bottom: 60px;
-}
 
 /******** ABOUT SECTION ********/
 section.node-page .body .changing-words-wrapper {
