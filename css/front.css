@@ -320,6 +320,14 @@ section.block-entity-blocktaxonomy-term .description {
 .credits-slider .view-header h2 span {
     font-weight: 700;
 }
+.credits-slider .slick-list {
+	overflow: visible;
+}
+.credits-slider .slick__slide {
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+	overflow: visible !important;
+	padding: 7px;
+}
 .credits-slider .view-content .slick__arrow {
     top: 60%;
     opacity: 0;
