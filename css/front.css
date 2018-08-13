@@ -386,7 +386,7 @@ section.node-43 .body {
 	position: relative;
 	float: none;
 	min-width: 320px;
-	color: #fdfdfd !important;
+	color: #fdfdfd;
 	max-width: 460px;
 }
 .node-16 .bs-region--main h2 {
