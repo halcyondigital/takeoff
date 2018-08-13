@@ -7,6 +7,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+ol li {
+	list-style-type: disc;
+	font-size: 0.8em;
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 1.6em;
+	letter-spacing: 1px;
+}
 /******** NAVBAR ********/
 .navbar {
 	max-width: none;
