@@ -380,3 +380,18 @@ section.node-43 .body {
 	text-align: center;
 }
 /******** CONTACT ********/
+.node-16 .bs-region--main {
+	width: 40%;
+	margin: auto;
+	position: relative;
+	float: none;
+	min-width: 350px;
+}
+.node-16 .bs-region--main h2 {
+	letter-spacing: 0.15em;
+	font-size: calc(150% + 1vw);
+}
+.node-16 .bs-region--main p {
+    font-size: calc(100% + 0.25vw);
+    line-height: calc(150% + 0.2vw);
+}
