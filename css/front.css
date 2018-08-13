@@ -307,7 +307,8 @@ section.block-entity-blocktaxonomy-term .description {
 
 /******** PLAYBACK SLIDESHOW ********/
 .playback-buttons {
-	text-align: center;
+    text-align: center;
+    margin: 20px 0;
 }
 .playback-buttons a.playback-button{
     border: 3px solid #fdfdfd;
