@@ -305,6 +305,31 @@ section.block-entity-blocktaxonomy-term .description {
 	margin-top: -18px;
 }
 
+/******** PLAYBACK SLIDESHOW ********/
+.playback-buttons {
+	text-align: center;
+}
+.playback-buttons a.playback-button{
+	border: 3px solid #fdfdfd;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 10px;
+	transition: all 0.4s ease;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	cursor: pointer;
+}
+.playback-buttons a.playback-button:hover {
+	background-color: #fdfdfd;
+	color: #212121;
+}
+.playback-buttons a.playback-button::after {
+	display: none;
+}
+
 /******** CREDITS SLIDER ********/
 .credits-slider {
     margin: 50px 75px;
