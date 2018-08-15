@@ -240,12 +240,13 @@ section.block-entity-blocktaxonomy-term .description {
 	right: 0;
 	width: 30%;
 	background: #212121;
-	height: 100%;
-    top: 0;
+	height: calc(100% + 50px);
+    top: -50px;
     text-align: center;
     display: flex;
     align-items: center;
     z-index: 100;
+    padding-top: 50px;
 }
 .node-slideshow .rental-sidebar > .rental-item {
 	/*position: relative;
