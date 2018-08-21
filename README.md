@@ -3,7 +3,8 @@
 <!-- @ingroup sub_theming -->
 # Halcyon Digital website theme 
 
-Based on Bootstrap 3 and [Drupal Bootstrap]. Incorporates [fullpage.js]
+Website theme for [Halcyon Digital]. Based on Bootstrap 3 and [Drupal Bootstrap]. Incorporates [fullpage.js]
 
+[Halcon Digital]: https://halcyon.digital
 [Drupal Bootstrap]: https://www.drupal.org/project/bootstrap
 [fullpage.js]:  https://github.com/alvarotrigo/fullPage.js
