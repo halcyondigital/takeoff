@@ -5,6 +5,7 @@
             // check if fullpage is active and initialise if not
             if(!$('html').hasClass('fp-enabled')){
                 $('#fullpage', context).once('fullpage').fullpage({
+                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                     anchors: drupalSettings.fullPage.sections,  // bring in section labels from Page Manager
                     menu: '.navbar-nav',
                     paddingTop: '50px',
@@ -14,34 +15,34 @@
                     scrollOverflow: true,
                     slideSelector: '.section-slide',
                     slidesNavigation: true,
-                    onLeave: function(index, nextIndex, direction){
-                        var leavingSection = $(this);
+                    onLeave: function(origin, destination, direction){
+                        //var leavingSection = $(this);
 
                         // attempt to lazy load following slide
                         if(direction == 'down'){
-                          lazyLoad(nextIndex);
+                          lazyLoad(destination.index + 1);
                         }
                         if(direction == 'up'){
-                          lazyLoad(nextIndex - 2);
+                          lazyLoad(destination.index - 1);
                         }
 
                         // fade in extra nav options when moving off 1st slide
-                        if(index == 1 && direction =='down'){
+                        if(origin.index == 0 && direction =='down'){
                             $('.navbar.navbar-fixed-top').addClass('deep');
                         }
                         // fade out extra nav options when returning to 1st slide
-                        else if(index == 2 && direction == 'up'){
+                        else if(origin.index == 1 && direction == 'up'){
                             $('.navbar.navbar-fixed-top').removeClass('deep');
                         }
 
                         // check if next slide is the child of a menu item, determined by a '-' seperator
-                        var incoming = drupalSettings.fullPage.sections[nextIndex-1];  // get anchor name for incoming slide instead of index number
+                        var incoming = destination.anchor;  // get anchor name for incoming slide
                         var parent = incoming.split('-');
                         $(".navbar-nav").find('a').removeClass('active-child');
                         $(".navbar-nav").find("a[data-menuanchor='" + parent[0] + "']").addClass('active-child');
 
                         // change page title based on next slide
-                        if(nextIndex == 1) {
+                        if(destination.index == 1) {
                             document.title = title;
                         } else {
                             document.title = parent[0].replace(/\b\w/g, l => l.toUpperCase()) + " / Halcyon Digital";
@@ -69,6 +70,7 @@
             // Lazy loads image, video and audio elements.
             function lazyLoad(index){
               var panel = $("#fullpage section").eq(index);
+              console.log(panel);
               var element;
 
               panel.find('img[data-src], img[data-srcset], source[data-src], source[data-srcset], video[data-src], audio[data-src], iframe[data-src]').each(function(){

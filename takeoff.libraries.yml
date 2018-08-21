@@ -12,10 +12,10 @@ fullpage:
   version: 2.x
   css:
     theme:
-      fullpage/jquery.fullpage.min.css: {}
+      fullpage/fullpage.min.css: {}
   js:
-    fullpage/fullpage/vendors/scrolloverflow.js: {}
-    fullpage/jquery.fullpage.js: {}
+    fullpage/vendors/scrolloverflow.js: {}
+    fullpage/fullpage.js: {}
   dependencies:
     - core/jquery
     - core/drupalSettings
