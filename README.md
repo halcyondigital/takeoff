@@ -1,7 +1,7 @@
 <!-- @file Instructions for subtheming using the CDN Starterkit. -->
 <!-- @defgroup sub_theming_cdn -->
 <!-- @ingroup sub_theming -->
-# Halcyon Digital website theme 
+# 'Takeoff' website theme for Drupal
 
 Website theme for [Halcyon Digital]. Based on Bootstrap 3 and [Drupal Bootstrap]. Incorporates [fullpage.js]
 
