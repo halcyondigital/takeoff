@@ -9,7 +9,7 @@ global-styling:
     - core/jquery.once
 
 fullpage:
-  version: 2.x
+  version: 3.x
   css:
     theme:
       fullpage/fullpage.min.css: {}
