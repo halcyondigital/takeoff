@@ -8,6 +8,7 @@
 }
 section.fp-section {
     z-index: 1;
+    -webkit-transform: translate3d(0,0,0);
 }
 /******** CONTAINER ********/
 body > div > .main-container.container-fluid {
