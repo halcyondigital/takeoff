@@ -70,7 +70,6 @@
             // Lazy loads image, video and audio elements.
             function lazyLoad(index){
               var panel = $("#fullpage section").eq(index);
-              console.log(panel);
               var element;
 
               panel.find('img[data-src], img[data-srcset], source[data-src], source[data-srcset], video[data-src], audio[data-src], iframe[data-src]').each(function(){
