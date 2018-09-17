@@ -256,6 +256,9 @@ section.block-entity-blocktaxonomy-term .description {
     padding: 0 30px;
     width: 100%;
 }
+.node-slideshow .rental-sidebar .field--name-field-image img {
+    mix-blend-mode: screen;
+}
 .node-slideshow .rental-sidebar h5 {
 	width: 100%;
 	background: #fdfdfd;
