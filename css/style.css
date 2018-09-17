@@ -218,8 +218,22 @@ section.fullpage-section-dark .items-carousel .slide__title {
 .items-carousel .slide__caption .price .price-value {
     color: #16c1f3;
 }
+.items-carousel .slick-slide img {
+    mix-blend-mode: multiply;
+}
+.items-carousel .slide__media {
+    isolation: isolate;
+    background-color: #fdfdfd;
+}
 section.fullpage-section-dark .items-carousel .slide__caption .price .price-suffix {
     color: #3e3e3e;
+}
+section.fullpage-section-dark .items-carousel .slick-slide img {
+    mix-blend-mode: screen;
+}
+section.fullpage-section-dark .items-carousel .slide__media {
+    isolation: isolate;
+    background-color: #212121;
 }
 /******** CREDITS ********/
 .popover {
