@@ -254,6 +254,7 @@ section.block-entity-blocktaxonomy-term .description {
     top: 50%;
     transform: translateY(-50%);*/
     padding: 0 30px;
+    width: 100%;
 }
 .node-slideshow .rental-sidebar h5 {
 	width: 100%;
