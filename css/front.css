@@ -34,7 +34,7 @@ section.node-title::before, section.fullpage-header::before {
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0.6;
 }
-section.node-slideshow .section-slide::before {  /* add repeating stripey background overlay */
+section.node-slideshow .section-slide::before, section.node-16::before {  /* add repeating stripey background overlay */
     content:"";
     display: block;
     height: 100%;
