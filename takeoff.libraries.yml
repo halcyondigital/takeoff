@@ -29,3 +29,8 @@ front:
       js/front.js: {}
   dependencies:
     - takeoff/fullpage
+
+setup:
+  css:
+    theme:
+      css/setup.css: {}

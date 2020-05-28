@@ -41,6 +41,14 @@ function takeoff_preprocess_page(&$variables) {
     }
 }
 
+function takeoff_preprocess_node(&$variables) {
+    switch ($variables['node']->getType()) {
+        case "qtake_cloud":
+           $variables['#attached']['library'][] = 'takeoff/setup';
+        break;
+    }
+}
+
 function takeoff_preprocess_block(&$variables) {
     // if block is a node, pass fields to template
     $node = $variables['elements']['content']['#node'] ?? NULL;

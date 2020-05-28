@@ -1,0 +1,14 @@
+/******** STYLING FOR CLOUD STREAM INSTRUCTIONS ********/
+
+/******** OVERRIDE HEADERS ********/
+h1.page-header {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.cloud-step-1 {
+    font-size: 1.7em;
+}
+.cloud-qr-code {
+    text-align: center;
+}
