@@ -5,6 +5,7 @@
           //console.log('hello');
         });
         $(document, context).once('fadein').ajaxSuccess(function () {
+          // Removed this to fix an IMCE bug... not sure what it's doing...
           //$.fn.fullpage.reBuild();
         });
         //$('[data-toggle=popover]:not([data-popover-content])').popover({trigger: 'hover', placement: 'auto top'});
