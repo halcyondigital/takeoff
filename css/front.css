@@ -250,7 +250,20 @@ section.block-entity-blocktaxonomy-term .description {
 	display: flex;
 	align-items: center;
 	z-index: 100;
-	padding-top: 50px;
+	padding: 50px;
+}
+.node-slideshow .text-sidebar h5 {
+	width: 100%;
+	background: #fdfdfd;
+	color: #212121;
+	padding: 15px;
+	text-align: center;
+	margin: 20px 0;
+    letter-spacing: 0.2em;
+    font-size: calc(60% + 1.2vw);
+}
+.node-slideshow .text-sidebar .body {
+    text-align: left;
 }
 .node-slideshow .slide-background {
 	position: absolute;
@@ -262,7 +275,7 @@ section.block-entity-blocktaxonomy-term .description {
 }
 .node-slideshow .slide-background .slide-icon {
 	margin: auto;
-	width: 40%;
+	width: 30%;
 }
 .node-slideshow .rental-sidebar {
     position: absolute;
