@@ -239,12 +239,37 @@ section.block-entity-blocktaxonomy-term .description {
         width: 68%;
     }
 }
-.node-slideshow .rental-sidebar {
+.node-slideshow .text-sidebar {
 	position: absolute;
-	right: 0;
-	width: 30%;
+	left: 0;
+	width: 40%;
 	background: #212121;
 	height: calc(100% + 50px);
+	top: -50px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	z-index: 100;
+	padding-top: 50px;
+}
+.node-slideshow .slide-background {
+	position: absolute;
+	right: 0;
+	width: 60%;
+	top: 0;
+	height: 100%;
+	display: flex;
+}
+.node-slideshow .slide-background .slide-icon {
+	margin: auto;
+	width: 40%;
+}
+.node-slideshow .rental-sidebar {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    background: #212121;
+    height: calc(100% + 50px);
     top: -50px;
     text-align: center;
     display: flex;
