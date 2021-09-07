@@ -201,6 +201,9 @@ section.fullpage-header .view-sub-categories .sub-category a:hover {
 section.block-entity-blocktaxonomy-term .container {
     padding: 0 50px;
 }
+section.block-entity-block h2.block-title {
+    display: none;
+}
 section.fullpage-section-dark {
     background-color: #212121;
     color: #fdfdfd;
