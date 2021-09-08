@@ -425,6 +425,10 @@ section.block-entity-blocktaxonomy-term .description {
 .credits-slider .slick-arrow.slick-next {
 	transform: translate(140%,-150%);
 }
+/******** REMOTE - INTRODUCTION ********/
+section.node-67 .title {
+    text-align: center;
+}
 /******** FACILITIES - MORE ********/
 section.node-43 {
     background-color: #212121;
