@@ -66,7 +66,7 @@ section.node-title.node-2::before {  /* add repeating stripey background overlay
 section.node-title {
     text-align: center;
 }
-section.node-title h2 {
+section.node-title h1 {
     text-transform: uppercase;
     color: #fdfdfd;
     letter-spacing: 0.2em;
@@ -81,7 +81,7 @@ section.fullpage-header h2 {
     text-align: center;
     margin-top: 10px;
 }
-section.node-title h3 {
+section.node-title h2 {
     text-transform: uppercase;
     color: #16c1f3;
     letter-spacing: 0.2em;
