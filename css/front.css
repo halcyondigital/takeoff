@@ -73,7 +73,7 @@ section.node-title h1 {
     font-size: calc(175% + 5vw);
     margin-top: -50px;
 }
-section.fullpage-header h2 {
+section.fullpage-header h1 {
     text-transform: uppercase;
     color: #fdfdfd;
     letter-spacing: 0.2em;
