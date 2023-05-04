@@ -111,11 +111,20 @@ section.node-page .body {
 }
 
 /******** ABOUT SECTION ********/
-section.node-page .body .changing-words-wrapper {
+section.node-page .body .changing-headline p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+section.node-page .body ul.changing-words-wrapper {
     display: inline-block;
     perspective: 300px;
+    float: left;
+    padding-left: 0.5em;
 }
-section.node-page .body .changing-words-wrapper b {
+section.node-page .body ul.changing-words-wrapper li {
     opacity: 0;
     transform-origin: 50% 100%;
     transform: rotateX(180deg);
@@ -123,15 +132,18 @@ section.node-page .body .changing-words-wrapper b {
     position: absolute;
     left: 0;
     top: 0;
+    list-style: none;
+    float: left;
+    font-weight: 800;
   }
-section.node-page .body .changing-words-wrapper b.is-visible {
+section.node-page .body ul.changing-words-wrapper li.is-visible {
     position: relative;
     opacity: 1;
     transform: rotateX(0deg);
     animation: zoom-in 0.8s;
 }
 
-section.node-page .body .changing-words-wrapper b.is-hidden {
+section.node-page .body ul.changing-words-wrapper li.is-hidden {
     transform: rotateX(180deg);
     animation: zoom-out 0.8s;
 }
