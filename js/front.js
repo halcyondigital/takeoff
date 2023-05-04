@@ -51,7 +51,7 @@
                     afterRender: function(){
                         $('.section-slide').css('padding-top', '50px');
                         $('.section-slide').closest('.section').css('padding-top','0');
-                        animateHeadline($('h3.changing-headline'));
+                        animateHeadline($('div.changing-headline'));
                         //$('.view-rental-items').trigger('RefreshView');
                     }
                 });
