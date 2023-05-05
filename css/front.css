@@ -130,7 +130,8 @@ section.node-page .body ul.changing-words-wrapper {
     display: inline-block;
     perspective: 300px;
     float: left;
-    padding-left: 0.5em;
+    margin-left: 0.5em;
+    padding-left: 0;
 }
 section.node-page .body ul.changing-words-wrapper li {
     opacity: 0;
