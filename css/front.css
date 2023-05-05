@@ -111,12 +111,20 @@ section.node-page .body {
 }
 
 /******** ABOUT SECTION ********/
+
+section.node-page .body .changing-headline {
+    padding-bottom: 10px;
+}
 section.node-page .body .changing-headline p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.75em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+section.node-page .body .changing-headline > p {
+	float: left;
 }
 section.node-page .body ul.changing-words-wrapper {
     display: inline-block;
@@ -134,8 +142,10 @@ section.node-page .body ul.changing-words-wrapper li {
     top: 0;
     list-style: none;
     float: left;
-    font-weight: 800;
-  }
+}
+section.node-page .body ul.changing-words-wrapper li p {
+    font-weight: 700;
+}
 section.node-page .body ul.changing-words-wrapper li.is-visible {
     position: relative;
     opacity: 1;
