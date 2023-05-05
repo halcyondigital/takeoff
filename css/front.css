@@ -112,9 +112,6 @@ section.node-page .body {
 
 /******** ABOUT SECTION ********/
 
-section.node-page .body .changing-headline {
-    padding-bottom: 10px;
-}
 section.node-page .body .changing-headline p {
     font-family: 'Montserrat';
     font-style: normal;
@@ -129,7 +126,6 @@ section.node-page .body .changing-headline > p {
 section.node-page .body ul.changing-words-wrapper {
     display: inline-block;
     perspective: 300px;
-    float: left;
     margin-left: 0.5em;
     padding-left: 0;
 }
@@ -142,7 +138,6 @@ section.node-page .body ul.changing-words-wrapper li {
     left: 0;
     top: 0;
     list-style: none;
-    float: left;
 }
 section.node-page .body ul.changing-words-wrapper li p {
     font-weight: 700;
