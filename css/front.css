@@ -291,6 +291,7 @@ section.block-entity-blocktaxonomy-term .description {
 }
 .node-slideshow .text-sidebar .body img {
     margin: 20px 10px;
+    max-width: 500px;
 }
 .node-slideshow .slide-background {
 	position: absolute;
