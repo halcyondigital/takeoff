@@ -257,7 +257,7 @@ section.block-entity-blocktaxonomy-term .description {
         width: 68%;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     .text-sidebar {
       width: 100% !important;
     }
