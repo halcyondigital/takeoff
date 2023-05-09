@@ -11,7 +11,7 @@
                     paddingTop: '50px',
                     animateAnchor: false,
                     sectionsDestination: 'top',
-                    responsiveWidth: '768',
+                    responsiveWidth: '992',
                     scrollOverflow: true,
                     slideSelector: '.section-slide',
                     slidesNavigation: true,
