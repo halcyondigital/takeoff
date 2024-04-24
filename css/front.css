@@ -449,6 +449,10 @@ section.block-entity-blocktaxonomy-term .description {
 section.node-67 .title {
     text-align: center;
 }
+/******** FACILITIES - HUB ********/
+section.node-slideshow.node-79 .section-slide::before {
+  opacity: 0.2;
+}
 /******** FACILITIES - MORE ********/
 section.node-43 {
     background-color: #212121;
