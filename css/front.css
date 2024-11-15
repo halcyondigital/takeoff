@@ -37,11 +37,11 @@ section.node-title::before, section.fullpage-header::before {
 section.node-slideshow .section-slide::before, section.node-16::before {  /* add repeating stripey background overlay */
     content:"";
     display: block;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-image: 
         linear-gradient(130deg, rgba(255, 255, 255, 0.05) 8.33%, rgba(0, 0, 0, 0.5) 8.33%, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 58.33%, rgba(0, 0, 0, 0.5) 58.33%, rgba(0, 0, 0, 0.5) 100%);
     background-size: 7.83px 9.33px;
@@ -239,6 +239,7 @@ section.block-entity-blocktaxonomy-term .description {
 /******** SLIDESHOW SECTIONS ********/
 .node-slideshow .section-slide {
     color: #fdfdfd;
+    background-color: #212121;
 }
 .node-slideshow .section-slide > .fp-tableCell {
     position: relative;
@@ -451,7 +452,10 @@ section.node-67 .title {
 }
 /******** FACILITIES - HUB ********/
 section.node-slideshow.node-79 .section-slide::before {
-  opacity: 0.2;
+  opacity: 0.5;
+}
+section.node-slideshow.node-79 .slide-26.section-slide::before {
+  opacity: 0;
 }
 /******** FACILITIES - MORE ********/
 section.node-43 {
