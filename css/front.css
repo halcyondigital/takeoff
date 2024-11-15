@@ -243,7 +243,8 @@ section.block-entity-blocktaxonomy-term .description {
 }
 .node-slideshow .section-slide .container {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 60px);
+    align-items: center;
 }
 .node-slideshow .section-slide > .fp-tableCell {
     position: relative;
