@@ -39,7 +39,7 @@ section.node-slideshow .section-slide::before, section.node-16::before {  /* add
     display: block;
     height: 100vh;
     position: relative;
-    top: 0;
+    top: -50px;
     left: 0;
     width: 100vw;
     background-image: 
@@ -240,6 +240,10 @@ section.block-entity-blocktaxonomy-term .description {
 .node-slideshow .section-slide {
     color: #fdfdfd;
     background-color: #212121;
+}
+.node-slideshow .section-slide .container {
+    display: flex;
+    height: 100vh;
 }
 .node-slideshow .section-slide > .fp-tableCell {
     position: relative;
