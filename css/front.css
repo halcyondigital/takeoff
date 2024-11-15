@@ -454,7 +454,7 @@ section.node-67 .title {
 section.node-slideshow.node-79 .section-slide::before {
   opacity: 0.5;
 }
-section.node-slideshow.node-79 .slide-26.section-slide::before {
+section.node-slideshow.node-79 .slide-26.section-slide::before, section.node-slideshow.node-79 .slide-27.section-slide::before {
   opacity: 0;
 }
 /******** FACILITIES - MORE ********/
