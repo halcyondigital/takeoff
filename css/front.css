@@ -249,7 +249,7 @@ section.block-entity-blocktaxonomy-term .description {
 .node-slideshow .section-slide > .fp-tableCell {
     position: relative;
 }
-.node-slideshow .section-slide .row.bs-1col.paragraph--type-slide-basic {
+.node-slideshow .section-slide .row.bs-1col.paragraph--type-slide-basic, .node-slideshow .section-slide .row.bs-1col.paragraph--type-slide-gallery {
     width: 100%;
 }
 .node-slideshow .section-slide .body {
@@ -462,7 +462,7 @@ section.node-67 .title {
 section.node-slideshow.node-79 .section-slide::before {
   opacity: 0.5;
 }
-section.node-slideshow.node-79 .slide-26.section-slide::before, section.node-slideshow.node-79 .slide-27.section-slide::before {
+section.node-slideshow.node-79 .slide-26.section-slide::before, section.node-slideshow.node-79 .slide-27.section-slide::before,  section.node-slideshow.node-79 .slide-28.section-slide::before {
   opacity: 0;
 }
 /******** FACILITIES - MORE ********/
