@@ -460,10 +460,10 @@ section.node-67 .title {
 }
 /******** FACILITIES - HUB ********/
 section.node-slideshow.node-79 .section-slide::before {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 section.node-slideshow.node-79 .slide-26.section-slide::before, section.node-slideshow.node-79 .slide-27.section-slide::before,  section.node-slideshow.node-79 .slide-28.section-slide::before {
-  opacity: 0;
+    opacity: 0;
 }
 /******** FACILITIES - MORE ********/
 section.node-43 {
@@ -471,8 +471,26 @@ section.node-43 {
     color: #fdfdfd;
 }
 section.node-43 .body {
-	margin-bottom: 45px;
-	text-align: center;
+    margin-bottom: 45px;
+    text-align: center;
+}
+/******** PHOTOSWIPE GALLERY ********/
+.photoswipe-gallery > div.field--items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 8px;
+}
+@media screen and (max-width: 768px) {
+    .photoswipe-gallery > div.field--items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 480px) {
+    .photoswipe-gallery > div.field--items {
+        grid-template-columns: 1fr;
+    }
 }
 /******** CONTACT ********/
 .node-16 .bs-region--main {
