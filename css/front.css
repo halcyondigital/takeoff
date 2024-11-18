@@ -482,14 +482,9 @@ section.node-43 .body {
     grid-auto-flow: dense;
     gap: 8px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .photoswipe-gallery > div.field--items {
         grid-template-columns: 1fr 1fr;
-    }
-}
-@media screen and (max-width: 480px) {
-    .photoswipe-gallery > div.field--items {
-        grid-template-columns: 1fr;
     }
 }
 /******** CONTACT ********/
