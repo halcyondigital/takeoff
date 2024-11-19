@@ -488,18 +488,23 @@ section.node-43 .body {
     }
 }
 /******** CONTACT ********/
+.node-16 .fp-scrollable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .node-16 .bs-region--main {
-	width: 60%;
-	margin: auto;
-	position: relative;
-	float: none;
-	min-width: 320px;
-	color: #fdfdfd;
-	max-width: 460px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    float: none;
+    min-width: 320px;
+    color: #fdfdfd;
+    max-width: 460px;
 }
 .node-16 .bs-region--main h2 {
-	letter-spacing: 0.15em;
-	font-size: calc(150% + 1vw);
+    letter-spacing: 0.15em;
+    font-size: calc(150% + 1vw);
 }
 .node-16 .bs-region--main p {
     font-size: calc(100% + 0.25vw);
