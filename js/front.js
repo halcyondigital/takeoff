@@ -1,10 +1,10 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
     Drupal.behaviors.fullPage = {
         attach: function (context, settings) {
             var title = document.title;
             // check if fullpage is active and initialise if not
             if(!$('html').hasClass('fp-enabled')){
-                $('#fullpage', context).once('fullpage').fullpage({
+                $(once('fullpage', '#fullpage', context)).fullpage({
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                     anchors: drupalSettings.fullPage.sections,  // bring in section labels from Page Manager
                     menu: '.navbar-nav',
@@ -114,4 +114,4 @@
              }
         }
     };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);
