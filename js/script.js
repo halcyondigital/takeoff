@@ -1,10 +1,10 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
     Drupal.behaviors.transitionAjax = {
       attach: function (context, settings) {
-        $(document, context).once('fadeout').ajaxStart(function () {
+        $(once('fadeout', document, context)).ajaxStart(function () {
           //console.log('hello');
         });
-        $(document, context).once('fadein').ajaxSuccess(function () {
+        $(once('fadein', document, context)).ajaxSuccess(function () {
           // Removed this to fix an IMCE bug... not sure what it's doing...
           //$.fn.fullpage.reBuild();
         });
@@ -22,4 +22,4 @@
         });
       }
     }
-  })(jQuery, Drupal, drupalSettings);
+  })(jQuery, Drupal, drupalSettings, once);
