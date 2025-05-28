@@ -6,7 +6,7 @@ global-styling:
     js/script.js: {}
   dependencies:
     - core/jquery
-    - core/jquery.once
+    - core/once
 
 fullpage:
   version: 3.x
