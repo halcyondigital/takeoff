@@ -394,7 +394,7 @@ section.block-entity-blocktaxonomy-term .description {
     text-align: center;
     margin: 20px 0;
 }
-.playback-buttons a.playback-button{
+.main-container .playback-buttons a.playback-button{
     border: 3px solid #fdfdfd;
     color: #fdfdfd;
 	display: inline-block;
@@ -408,7 +408,7 @@ section.block-entity-blocktaxonomy-term .description {
 	letter-spacing: 0.3em;
 	cursor: pointer;
 }
-.playback-buttons a.playback-button:hover, .playback-buttons a.playback-button:active, .playback-buttons a.playback-button:focus {
+.main-container .playback-buttons a.playback-button:hover {
 	background-color: #fdfdfd;
 	color: #212121 !important;
 }
