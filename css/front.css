@@ -437,6 +437,7 @@ section.block-entity-blocktaxonomy-term .description {
 .credits-slider .slick__slide {
 	box-shadow: 7px 7px 15px rgba(0,0,0,0.43);
 	padding: 7px;
+	margin: 0 10px;
 }
 .credits-slider .view-content .slick__arrow {
     top: 60%;
