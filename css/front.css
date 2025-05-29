@@ -408,9 +408,9 @@ section.block-entity-blocktaxonomy-term .description {
 	letter-spacing: 0.3em;
 	cursor: pointer;
 }
-.playback-buttons a.playback-button:hover {
+.playback-buttons a.playback-button:hover, .playback-buttons a.playback-button:active, .playback-buttons a.playback-button:focus {
 	background-color: #fdfdfd;
-	color: #212121;
+	color: #212121 !important;
 }
 .playback-buttons a.playback-button::after {
 	display: none;
