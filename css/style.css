@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 1.6em;
 	letter-spacing: 1px;
 }
+.slick-arrow::before {
+    color: #212121;
+}
+.fullpage-section-dark .slick-arrow::before {
+    color: #fdfdfd;
+}
+.slick-arrow:hover::before {
+    color: #16c1f3;
+}
 /******** NAVBAR ********/
 .navbar {
 	max-width: none;
@@ -186,12 +195,21 @@ section.fullpage-section-dark .items-carousel .slide__title {
     color: #212121;
     background-color: #fdfdfd;
 }
+.items-carousel .slide {
+    margin: 0 10px;
+}
+.items-carousel .slick-prev {
+    left: -40px;
+}
+.items-carousel .slick-next {
+    right: -40px;
+}
 .items-carousel .slick img {
-	width: 100%;
+    width: 100%;
 }
 .items-carousel .slide__title {
-	font-size: 1em;
-	text-transform: uppercase;
+    font-size: 1em;
+    text-transform: uppercase;
     letter-spacing: 0.2em;
     padding: 10px 10px;
     text-align: center;
