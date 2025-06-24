@@ -265,14 +265,15 @@ section.fullpage-section-dark .items-carousel .slide__media {
     background-color: #212121;
     color: #FDFDFD;
     border-radius: 0;
+    display: block !important;
 }
 .popover-content h6 {
     margin-top: 0;
 }
 .credits-grid div.col {
-  padding: 10px;
+    padding: 10px;
 }
 .credits-grid div.col img {
-	box-shadow: 8px 8px 13px rgba(0, 0, 0, 0.2);
-	padding: 10px;
+    box-shadow: 8px 8px 13px rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
