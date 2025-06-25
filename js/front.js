@@ -47,6 +47,13 @@
                         } else {
                             document.title = parent[0].replace(/\b\w/g, l => l.toUpperCase()) + " / Halcyon Digital";
                         }
+
+                        // skip animation if destination slide is more than 1 away
+                        if(origin.index !== destination.index -1 && origin.index !== destination.index + 1){
+                            fullpage_api.setScrollingSpeed(0);
+                        } else {
+                            fullpage_api.setScrollingSpeed(700);
+                        }
                     },
                     afterRender: function(){
                         $('.section-slide').css('padding-top', '50px');
